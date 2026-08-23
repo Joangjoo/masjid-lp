@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #13294B;
+  --color-primary-dark: #0d1c34;
+  --color-primary-light: #1c3c6d;
+  
+  --color-secondary: #C49B5E;
+  --color-secondary-hover: #b2894d;
+  --color-secondary-light: #d4b078;
+  
+  --color-tertiary: #2E4A62;
+  --color-tertiary-dark: #213648;
+  --color-tertiary-light: #3b5d7b;
+  
+  --color-warm: #F8F6F3;
+  --color-warm-card: #FFFFFF;
+  
+  --color-text-dark: #1E1E24;
+  --color-text-muted: #7A7A7A;
+
+  --font-playfair: 'Playfair Display', serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-arabic: 'Noto Sans Arabic', serif, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #F8F6F3;
+  color: #1E1E24;
+  font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: #13294B;
+}
+::-webkit-scrollbar-thumb {
+  background: #C49B5E;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #b2894d;
+}
+
+/* Glassmorphism Styles */
+.glass-nav {
+  background: rgba(19, 41, 75, 0.35);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.solid-nav {
+  background: #13294B;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.25);
+  border-bottom: 1px solid rgba(196, 155, 94, 0.2);
+}
+
+/* Mosque Arch & Decorative Patterns */
+.bg-hero-pattern {
+  background-image: 
+    radial-gradient(circle at 50% 20%, rgba(196, 155, 94, 0.15) 0%, transparent 60%),
+    radial-gradient(circle at 10% 80%, rgba(46, 74, 98, 0.3) 0%, transparent 50%);
+}
